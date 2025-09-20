@@ -11,21 +11,37 @@
     <title>Formulário</title>
 </head>
 <body>
-    <form name="F_Aula" method="post" action="">
+    <form name="F_Aula" method="post" action="recebe.html">
             <label>Nome:</label><br/>
             <input type="text" nome="F_Nome" size="40" maxlength="30"/><br/><br/>
             
             <label>Senha:</label><br/>
             <input type="password" name="F_Senha" size="40" maxlength="20"/><br/><br/>
             
-            <label>qual esporte você platica?</label><br/>
+            <label>Qual esporte você platica?</label><br/>
             <input type="checkbox" name="F_Futebol" value="futebol"/><label>futebol</label><br/>
             <input type="checkbox" name="F_Natacao" value="natacao"/><label>Natação</label><br/>
             <input type="checkbox" name="F_Basquete" value="basquete"/><label>Basquete</label><br/><br/>
             
-            <label>Possui vículo?</label><br/>
+            <label>Possui veículo?</label><br/>
             <input type="radio" name="F_veiculo" value="s"/><label>Sim</label><br/>
             <input type="radio" name="F_veiculo" value="n"/><label>Não</label><br/><br/>
+
+            <label>Estado</label><br/>
+            <select name="F_Estado">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="PR">Parana</option>
+            </select><br/><br/>
+
+            <label>Comentário:</label><br/>
+            <textarea name="F_Comentario" cols="45" rows="5"></textarea><br/><br/>
+            
+            <input type="submit" value="Enviar"/>
+            <input type="reset" value="Limpar"/>
+            <input type="button" value="Sem Ação"/>
     </form>
 </body>
 </html>
