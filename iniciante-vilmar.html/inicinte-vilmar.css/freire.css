@@ -1,4 +1,31 @@
 /*alterei a cor de fundo da pagína*/
 body{
-    background-color: #6a6969;
+    background-color: #6b6868;
+}
+
+/*vou alterar os elementos label vou altera a cor da fonte que é o color,e a cor da font*/
+label{
+    color: aqua;
+    font-weight: bold;
+}
+
+/*Agora eu vou mudar os botões, que vou mudar os input eu quero mudar só os botões só que eu quero que só uma parte receba essas formatações pari isso eu vou usar o parâmetro class que fica bem mais organizado.Cor de fundo,também vou mudar a cor do texto usando o parâmetro color também vou mudar a largura usando widht tmabém vou mudar a altura height vou tirar a borda também usando o parâmetro boder também quero mudar o cursor para que vire uma mão quando passar o mause em cima vou usar o parâmetro pointer */
+.pt{
+    background-color: #c00000;
+    color: #fff;
+    width: 100px;
+    height: 25px;
+    border: 0px;
+    cursor:pointer;
+}
+
+/*Agora eu quero aplicar o css relacionado com um invento eu quero um evento over ou seja quando eu colocar o mause em cima dos elementos que eles se destaquem a borda então vou aplicar um css aqui para esses elementos eles são input vou aplicar para todos os input no evento hover eu quero que destaque a borda do tipo solid alem do input eu quero que o select também com houver receba essa propriedade e o textarea também no hover isso evita que eu tenha que formatar novamente.*/
+input:hover,select:hover, textarea:hover{
+    border:2px solid#0000ff
+    
+}
+
+/*Agora eu quero que quando o elemento estiver selecionado eu quero mudar a cor de fundo do elemento da pra fazer com JavaScript mais também da pra fazer com css e eu vou fazer com css então vamos lá o elemento é o input e o parâmetro é o focus quando ele estiver selecionado eu quero mudar a cor de fundo então eu uso background-color vamor aplicar também para o select no estado focus e também para o textarea também no estado focus*/
+input:focus, select:focus,textarea:focus{
+    background-color: #ff8080;
 }
